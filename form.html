@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caption — Generator Caption Produk</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/form.css">
+  <script src="js/form.js" defer></script>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Etalase</a>
+    <a href="form.html" aria-current="page">Caption</a>
+  </nav>
+
+  <header>
+    <div class="eyebrow">Rak No. 02 — Meja Kasir</div>
+    <h1>Caption</h1>
+    <p>Isi nama produk dan harga, pilih template, caption jadi.</p>
+  </header>
+
+  <main class="form-main">
+    <div class="form-intro">
+      <span class="form-number">CAPTION STUDIO / 001</span>
+      <h2>Kata-kata yang menjual.</h2>
+      <p>
+        Buat caption produk dengan cepat untuk kebutuhan promosi,
+        media sosial, dan katalog digital.
+      </p>
+    </div>
+
+    <form id="form" novalidate>
+      <div class="field">
+        <label for="nama">Nama Produk</label>
+        <input
+          type="text"
+          id="nama"
+          placeholder="Contoh: Kopi Susu Gula Aren"
+          aria-describedby="nama-error"
+        >
+        <small class="error" id="nama-error" aria-live="polite"></small>
+      </div>
+
+      <div class="field">
+        <label for="harga">Harga Produk (Rp)</label>
+        <input
+          type="number"
+          id="harga"
+          placeholder="Contoh: 25000"
+          min="1"
+          step="1"
+          aria-describedby="harga-error"
+        >
+        <small class="error" id="harga-error" aria-live="polite"></small>
+      </div>
+
+      <div class="field">
+        <label for="template">Gaya Caption</label>
+        <select id="template">
+          <option value="promo">01 — Promo</option>
+          <option value="santai">02 — Santai</option>
+          <option value="formal">03 — Formal</option>
+        </select>
+      </div>
+
+      <button type="submit" class="generate-button">
+        Buat Caption <span>↗</span>
+      </button>
+
+      <div class="result-heading">
+        <label for="caption">Hasil Caption</label>
+        <span>PREVIEW</span>
+      </div>
+
+      <textarea
+        id="caption"
+        rows="10"
+        placeholder="Hasil caption akan muncul di sini..."
+        readonly
+      ></textarea>
+
+      <p id="form-feedback" role="status" aria-live="polite"></p>
+
+      <button type="button" id="copyButton" class="copy-button">
+        Salin Caption
+      </button>
+    </form>
+  </main>
+
+  <footer>
+    Caption Generator · Dibuat dengan HTML + JS native
+  </footer>
+</body>
+</html>
