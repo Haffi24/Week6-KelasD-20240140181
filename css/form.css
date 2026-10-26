@@ -1,0 +1,176 @@
+
+.form-main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 55px 7% 75px;
+}
+
+.form-intro {
+  margin-bottom: 32px;
+}
+
+.form-number {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 1.2px;
+  color: var(--accent);
+}
+
+.form-intro h2 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(27px, 4vw, 38px);
+  margin-top: 14px;
+}
+
+.form-intro p {
+  max-width: 480px;
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+#form {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  padding: 30px;
+}
+
+.field {
+  margin-bottom: 23px;
+}
+
+.field label,
+.result-heading label {
+  display: block;
+  margin-bottom: 9px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.field input,
+.field select,
+#caption {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  padding: 13px 14px;
+  background: #fffefa;
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 13px;
+  outline: none;
+}
+
+.field input:focus,
+.field select:focus,
+#caption:focus {
+  border-color: var(--accent);
+}
+
+.field input.invalid {
+  border-color: var(--danger);
+}
+
+.field input.valid {
+  border-color: var(--accent);
+}
+
+.field select {
+  cursor: pointer;
+}
+
+.error {
+  display: block;
+  min-height: 17px;
+  margin-top: 6px;
+  color: var(--danger);
+  font-size: 11px;
+}
+
+.generate-button,
+.copy-button {
+  width: 100%;
+  padding: 14px 18px;
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: white;
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.generate-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.generate-button:hover,
+.copy-button:hover {
+  background: var(--accent-dark);
+}
+
+.result-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+.result-heading label {
+  margin-bottom: 10px;
+}
+
+.result-heading span {
+  font-family: var(--mono);
+  font-size: 9px;
+  color: var(--muted);
+}
+
+#caption {
+  display: block;
+  min-height: 220px;
+  resize: vertical;
+  line-height: 1.9;
+}
+
+#form-feedback {
+  margin: 13px 0;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+#form-feedback.success {
+  color: var(--accent-dark);
+}
+
+#form-feedback.error {
+  color: var(--danger);
+}
+
+.copy-button {
+  background: transparent;
+  color: var(--accent-dark);
+}
+
+.copy-button:hover {
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .form-main {
+    padding: 38px 5% 50px;
+  }
+
+  #form {
+    padding: 20px;
+  }
+
+  .form-intro h2 {
+    line-height: 1.3;
+  }
+}
