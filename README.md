@@ -2,7 +2,7 @@
 
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/892695cc-c04b-47c4-b17d-e4df05b53ee2" />
 
-<h2>SCREENSHOTTAMPILAN CAPTION </h2>
+<h2>SCREENSHOT TAMPILAN CAPTION </h2>
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/05a7069e-ab29-4968-82b7-eb2e93c591ae" />
 
 
